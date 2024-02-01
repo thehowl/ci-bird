@@ -1,19 +1,23 @@
 {
-  "name": "clumsy-bird",
+  "name": "ci-bird",
   "version": "0.1.0",
   "description": "Clumsy Bird - A MelonJS port of the famous Flappy Bird game",
-  "homepage": "http://ellisonleao.github.io/clumsy-bird/",
+  "homepage": "http://thehowl.github.io/ci-bird/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ellisonleao/clumsy-bird"
+    "url": "https://github.com/thehowl/ci-bird"
+  },
+  "scripts": {
+    "dev": "grunt connect",
+	"grunt": "grunt"
   },
   "bugs": {
-    "url": "https://github.com/ellisonleao/clumsy-bird/issues"
+    "url": "https://github.com/thehowl/ci-bird/issues"
   },
   "licenses": [
     {
       "type": "MIT License",
-      "url": "https://github.com/ellisonleao/clumsy-bird/blob/master/LICENSE"
+      "url": "https://github.com/thehowl/ci-bird/blob/master/LICENSE"
     }
   ],
   "author": {
@@ -23,16 +27,18 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-concat": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-connect": "^0.7.1",
-    "grunt-replace": "~0.4.3",
-    "grunt-manifest": "~0.4.0"
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-connect": "^4.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "^5.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-manifest": "~0.4.0",
+    "grunt-replace": "^2.0.2"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.4.3"
   }
 }
